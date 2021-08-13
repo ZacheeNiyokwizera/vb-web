@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#" class="brand">Visit Burundi</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="admin.html">Admin</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="cards-div" class="cards-container" style="display: none;">
+        <div id="page-btns">
+            <button id="add-btn">Add a Post</button>
+            <button id="logOutBtn" class="btn btn-danger btn-sm">LOGOUT</button>
+
+        </div>
+
+        <form id="post-form" style="display:none;">
+
+            <h3>Upload a new action </h3>
+
+            <textarea id="post" class="form-control" placeholder=" Enter action description..."></textarea>
+            <textarea id="date" class="form-control" placeholder=" Enter action date..."></textarea>
+            <textarea id="tag" class="form-control" placeholder=" Enter action tag..."></textarea>
+            <textarea id="link" class="form-control" placeholder=" Enter action link..."></textarea>
+            <textarea id="location" class="form-control" placeholder=" Enter action location"></textarea>
+            <input type="file" class="form-control" id="image" accept="images/*">
+            <div class="text-center">
+                <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+                <button id="close-btn">Close</button>
+            </div>
+
+        </form>
+
+        <div class="row mt-4" id="posts">
+
+        </div>
+
+    </div>
+
+    <div class="container login-box">
+        <h3>LOGIN</h3>
+        <hr>
+        <form autocomplete="on" class="form-group" id="login-form">
+            <label for="">Email</label>
+            <input type="email" id="login-email" class="form-control"><br>
+            <label for="">Password</label><br>
+            <input type="password" id="login-password" class="form-control"><br>
+            <button type="submit" class="btn btn-success btn-block">LOGIN</button>
+            <br>
+            <div class="container error" id="loginError"></div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="social-words">
+
+                <p class="copyright">
+                    Copyright &copy; 2021,
+                </p>
+                <p class="copyright">
+                    Bridge of Hope Association
+                </p>
+                <p class="copyright">
+                    All Rights Reserved
+                </p>
+            </div>
+            <div class="social-words">
+                <ul class="working-hours">
+                    <p class="words"><i id="my-icons">Contact Us</i></p>
+                    <p class="words"><i id="my-icons" class="fa fa-phone icon">_+0000011113333</i></p>
+                    <p class="words"><i id="my-icons" class="fa fa-envelope icon">_blablabla@gmail.com</i>
+                    </p>
+                </ul>
+
+            </div>
+            <div class="social-list">
+                <p>Follow us on social Media </p>
+                <br>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+    <script src="admin.js"></script>
+
+
+</body>
+
+</html>
